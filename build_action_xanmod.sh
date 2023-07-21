@@ -19,7 +19,7 @@ tar -xf linux-6.1.39-xanmod1.tar.gz
 cd linux-6.1.39-xanmod1|| exit
 
 # copy config file
-cp ../config .config
+cp ../configdee .config
 
 # disable DEBUG_INFO to speedup build
 scripts/config --disable DEBUG_INFO
