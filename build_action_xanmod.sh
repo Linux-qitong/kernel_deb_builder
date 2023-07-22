@@ -15,8 +15,8 @@ cd "${GITHUB_WORKSPACE}" || exit
 
 # download kernel source
 wget https://gitlab.com/xanmod/linux/-/archive/6.1.39-xanmod1/linux-6.1.39-xanmod1.tar.gz
-tar -xf linux-6.1.38-rt12-xanmod1.tar.gz
-cd linux-6.1.38-rt12-xanmod1|| exit
+tar -xf linux-6.1.39-xanmod1.tar.gz
+cd linux-6.1.39-xanmod1|| exit
 
 # copy config file
 cp ../configut .config
