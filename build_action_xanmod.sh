@@ -19,7 +19,7 @@ tar -xf linux-6.4.4-xanmod1.tar.gz
 cd linux-6.4.4-xanmod1|| exit
 
 # copy config file
-cp ../configdee .config
+cp ../config .config
 
 # disable DEBUG_INFO to speedup build
 scripts/config --set-str SYSTEM_TRUSTED_KEYS ""
