@@ -7,19 +7,19 @@ sed -i "/deb-src/s/# //g" /etc/apt/sources.list
 
 # install dep
 sudo apt update
-sudo apt install -y wget xz-utils make gcc-12 flex bison dpkg-dev bc rsync kmod cpio libssl-dev git lsb vim libelf-dev
+sudo apt install -y wget xz-utils make gcc flex bison dpkg-dev bc rsync kmod cpio libssl-dev git lsb vim libelf-dev
 sudo apt build-dep -y linux
 
 # change dir to workplace
 cd "${GITHUB_WORKSPACE}" || exit
 
 # download kernel source
-wget https://gitlab.com/xanmod/linux/-/archive/6.1.39-xanmod1/linux-6.1.39-xanmod1.tar.gz
-tar -xf linux-6.1.39-xanmod1.tar.gz
-cd linux-6.1.39-xanmod1|| exit
+wget https://gitlab.com/xanmod/linux/-/archive/6.1.38-rt12-xanmod1/linux-6.1.38-rt12-xanmod1.tar.gz
+tar -xf linux-6.1.38-rt12-xanmod1.tar.gz
+cd linux-6.1.38-rt12-xanmod1|| exit
 
 # copy config file
-cp ../configut .config
+cp ../configdee .config
 
 # disable DEBUG_INFO to speedup build
 scripts/config --set-str SYSTEM_TRUSTED_KEYS ""
