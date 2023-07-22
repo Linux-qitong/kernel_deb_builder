@@ -14,12 +14,12 @@ sudo apt build-dep -y linux
 cd "${GITHUB_WORKSPACE}" || exit
 
 # download kernel source
-wget http://www.kernel.org/pub/linux/kernel/v6.x/linux-6.3.tar.gz  
-tar -xf linux-"$VERSION".tar.gz
-cd linux-"$VERSION" || exit
+wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
+tar -xf linux-6.3.13.tar.xz
+cd linux-6.3.13|| exit
 
 # copy config file
-cp ../config .config
+cp ../configdee .config
 
 # disable DEBUG_INFO to speedup build
 scripts/config --set-str SYSTEM_TRUSTED_KEYS ""
