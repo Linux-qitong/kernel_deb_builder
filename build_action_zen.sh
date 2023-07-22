@@ -16,7 +16,7 @@ cd "${GITHUB_WORKSPACE}" || exit
 # download kernel source
 wget https://github.com/zen-kernel/zen-kernel/archive/refs/tags/v6.4.4-lqx1.tar.gz
 tar -xf v6.4.4-lqx1.tar.gz
-cd linux-"$VERSION" || exit
+cd zen-kernel-6.4.4-lqx1|| exit
 
 # copy config file
 cp ../config .config
