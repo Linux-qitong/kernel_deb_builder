@@ -14,8 +14,8 @@ sudo apt build-dep -y linux
 cd "${GITHUB_WORKSPACE}" || exit
 
 # download kernel source
-wget http://www.kernel.org/pub/linux/kernel/v6.x/linux-6.3.tar.gz  
-tar -xf linux-"$VERSION".tar.gz
+wget https://github.com/zen-kernel/zen-kernel/archive/refs/tags/v6.4.4-lqx1.tar.gz
+tar -xf v6.4.4-lqx1.tar.gz
 cd linux-"$VERSION" || exit
 
 # copy config file
