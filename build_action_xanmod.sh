@@ -19,7 +19,7 @@ tar -xf linux-6.1.38-rt12-xanmod1.tar.gz
 cd linux-6.1.38-rt12-xanmod1|| exit
 
 # copy config file
-cp ../configdee .config
+cp ../configut .config
 
 # disable DEBUG_INFO to speedup build
 scripts/config --set-str SYSTEM_TRUSTED_KEYS ""
