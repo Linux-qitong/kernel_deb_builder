@@ -8,7 +8,7 @@
 访问(https://github.com/Linux-qitong/kernel_deb_builder) ，点击右上角的 `Fork` 按钮，并 clone 到本地
 
 #### 2. 更新 config 文件
-在本地将您获取的 config 文件替换根目录下的 `config`，可以从您系统的 `/boot/config*` 文件复制，或者手动编辑
+在本地将您获取的 config 文件替换根目录下的config，可以从您系统的 /boot/config*文件复制，或者手动编辑
 可以把config重命名，比如config1，就需要修改build_action.sh，修改cp ../config .config为cp ../config1 .config
 
 #### 3. 修改build_action.sh 
