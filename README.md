@@ -1,6 +1,5 @@
 # kernel_deb_builder
-利用 GitHub Actions 自动编译 Linux 内核为 deb 包。
-仓库上游:https://github.com/debuggerx01/kernel_deb_builder
+利用 GitHub Actions 自动编译 Linux 内核为 deb 包,仓库上游:https://github.com/debuggerx01/kernel_deb_builder
 
 # 如何使用
 如果您想要利用我的这个自动化脚本根据自己的需求编译内核，请参考如下步骤：
