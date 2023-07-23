@@ -20,6 +20,5 @@ Enjoy～ :grin:
 
 了解更多请看：
 
-[利用 GitHub Actions 自动构建 Linux 内核为 deb 包](https://www.debuggerx.com/2021/08/17/Using-github-actions-to-build-kernel-deb-packages/)
-
 [修改 Linux 内核使系统启动时间缩短约 30 秒](https://www.debuggerx.com/2021/07/07/Modify-the-linux-kernel-to-reduce-the-boot-speed-by-about-30-seconds/)
+
