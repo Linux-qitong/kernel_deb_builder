@@ -14,12 +14,12 @@ sudo apt build-dep -y linux
 cd "${GITHUB_WORKSPACE}" || exit
 
 # download kernel source
-wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.10.186.tar.xz
-tar -xf linux-5.10.186.tar.xz
-cd linux-5.10.186|| exit
+wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
+tar -xf linux-6.3.13.tar.xz
+cd linux-6.3.13|| exit
 
 # copy config file
-cp ../config5ky .config
+cp ../config .config
 
 # disable DEBUG_INFO to speedup build
 scripts/config --set-str SYSTEM_TRUSTED_KEYS ""
