@@ -14,9 +14,9 @@ sudo apt build-dep -y linux
 cd "${GITHUB_WORKSPACE}" || exit
 
 # download kernel source
-wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.41.tar.xz
-tar -xf linux-6.1.41.tar.xz
-cd linux-6.1.41|| exit
+wget https://gitlab.com/xanmod/linux/-/archive/6.1.38-rt12-xanmod1/linux-6.1.38-rt12-xanmod1.tar.gz
+tar -xf linux-6.1.38-rt12-xanmod1.tar.gz
+cd linux-6.1.38-rt12-xanmod1|| exit
 
 # copy config file
 cp ../config .config
