@@ -14,9 +14,9 @@ sudo apt build-dep -y linux
 cd "${GITHUB_WORKSPACE}" || exit
 
 # download kernel source
-wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
-tar -xf linux-6.3.13.tar.xz
-cd linux-6.3.13|| exit
+wget https://git.kernel.org/torvalds/t/linux-6.5-rc3.tar.gz
+tar -xf linux-6.5-rc3.tar.gz
+cd linux-6.5-rc3|| exit
 
 # copy config file
 cp ../configdee .config
