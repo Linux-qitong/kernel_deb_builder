@@ -19,7 +19,7 @@ tar -xf v6.4.7-lqx1.tar.gz
 cd zen-kernel-6.4.7-lqx1|| exit
 
 # copy config file
-cp ../config .config
+cp ../configdee .config
 
 # disable DEBUG_INFO to speedup build
 scripts/config --set-str SYSTEM_TRUSTED_KEYS ""
