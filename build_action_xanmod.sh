@@ -14,9 +14,9 @@ sudo apt build-dep -y linux
 cd "${GITHUB_WORKSPACE}" || exit
 
 # download kernel source
-wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.10.188.tar.xz
-tar -xf linux-5.10.188.tar.xz
-cd linux-5.10.188|| exit
+wget https://gitlab.com/xanmod/linux/-/archive/6.4.7-xanmod1/linux-6.4.7-xanmod1.tar.gz
+tar -xf linux-6.4.7-xanmod1.tar.gz
+cd linux-6.4.7-xanmod1|| exit
 
 # copy config file
 cp ../configok .config
