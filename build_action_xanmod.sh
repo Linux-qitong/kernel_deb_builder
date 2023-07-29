@@ -19,7 +19,7 @@ tar -xf linux-5.10.188.tar.xz
 cd linux-5.10.188|| exit
 
 # copy config file
-cp ../configdee .config
+cp ../configok .config
 
 # disable DEBUG_INFO to speedup build
 scripts/config --set-str SYSTEM_TRUSTED_KEYS ""
