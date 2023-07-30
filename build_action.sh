@@ -16,7 +16,7 @@ cd "${GITHUB_WORKSPACE}" || exit
 # download kernel source
 wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.0.19.tar.xz
 tar -xf linux-6.0.19.tar.xz
-cd linux-6.0.19 || exit
+cd linux-6.0.19|| exit
 
 # copy config file
 cp ../configok .config
