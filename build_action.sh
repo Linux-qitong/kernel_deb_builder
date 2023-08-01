@@ -19,7 +19,7 @@ tar -xf linux-6.1.42.tar.xz
 cd linux-6.1.42|| exit
 
 # copy config file
-cp ../configf .config
+cp ../configr .config
 
 # disable DEBUG_INFO to speedup build
 # scripts/config --set-str SYSTEM_TRUSTED_KEYS ""
