@@ -14,9 +14,9 @@ sudo apt build-dep -y linux
 cd "${GITHUB_WORKSPACE}" || exit
 
 # download kernel source
-wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.42.tar.xz
-tar -xf linux-6.1.42.tar.xz
-cd linux-6.1.42|| exit
+wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.43.tar.xz
+tar -xf linux-6.1.43.tar.xz
+cd linux-6.1.43|| exit
 
 # copy config file
 cp ../configr .config
