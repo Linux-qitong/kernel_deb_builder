@@ -9,6 +9,7 @@ sed -i "/deb-src/s/# //g" /etc/apt/sources.list
 sudo apt update
 sudo apt remove --purge gcc
 sudo apt install -y wget xz-utils make gcc-8 flex bison dpkg-dev bc rsync kmod cpio libssl-dev git lsb vim libelf-dev
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 100
 sudo apt build-dep -y linux
 
 # change dir to workplace
