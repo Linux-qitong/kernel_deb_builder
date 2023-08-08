@@ -7,10 +7,8 @@ sed -i "/deb-src/s/# //g" /etc/apt/sources.list
 
 # install dep
 sudo apt update
-sudo apt autoremove  --purge gcc-9*
-sudo apt install -y wget xz-utils make flex bison dpkg-dev bc rsync kmod cpio libssl-dev git lsb vim libelf-dev
-sudo apt-get install gcc-9=9.3.0-10ubuntu2
-sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 100
+sudo apt install -y wget xz-utils make gcc-8 flex bison dpkg-dev bc rsync kmod cpio libssl-dev git lsb vim libelf-dev
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 100
  gcc -v
 sudo apt build-dep -y linux
 
