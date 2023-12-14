@@ -14,23 +14,23 @@ sudo apt build-dep -y linux
 cd "${GITHUB_WORKSPACE}" || exit
 
 # download kernel source
-wget https://gitlab.com/xanmod/linux/-/archive/6.1.42-xanmod1/linux-6.1.42-xanmod1.tar.gz
-tar -xf linux-6.1.42-xanmod1.tar.gz
-cd linux-6.1.42-xanmod1|| exit
+wget https://gitlab.com/xanmod/linux/-/archive/6.6.7-xanmod1/linux-6.6.7-xanmod1.tar.gz
+tar -xf linux-6.6.7-xanmod1.tar.gz
+cd linux-6.6.7-xanmod1|| exit
 
 # copy config file
-cp ../configok .config
+cp ../configsi .config
 
 # disable DEBUG_INFO to speedup build
-scripts/config --set-str SYSTEM_TRUSTED_KEYS ""
-scripts/config --set-str SYSTEM_REVOCATION_KEYS ""
-scripts/config --undefine DEBUG_INFO
-scripts/config --undefine DEBUG_INFO_COMPRESSED
-scripts/config --undefine DEBUG_INFO_REDUCED
-scripts/config --undefine DEBUG_INFO_SPLIT
-scripts/config --undefine GDB_SCRIPTS
-scripts/config --set-val  DEBUG_INFO_DWARF5     n
-scripts/config --set-val  DEBUG_INFO_NONE       y
+#scripts/config --set-str SYSTEM_TRUSTED_KEYS ""
+#scripts/config --set-str SYSTEM_REVOCATION_KEYS ""
+#scripts/config --undefine DEBUG_INFO
+#scripts/config --undefine DEBUG_INFO_COMPRESSED
+#scripts/config --undefine DEBUG_INFO_REDUCED
+#scripts/config --undefine DEBUG_INFO_SPLIT
+#scripts/config --undefine GDB_SCRIPTS
+#scripts/config --set-val  DEBUG_INFO_DWARF5     n
+#scripts/config --set-val  DEBUG_INFO_NONE       y
 
 # apply patches
 # shellcheck source=src/util.sh
