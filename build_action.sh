@@ -11,6 +11,7 @@ sudo sh -c "cat > /etc/apt/sources.list.d/deepin.list" << EOL
 deb https://community-packages.deepin.com/beige/ beige main commercial community
 deb-src https://community-packages.deepin.com/beige/ beige main commercial community
 EOL
+sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 425956BB3E31DF
 sudo apt update
 sudo apt install -y wget xz-utils make gcc-12 flex bison dpkg-dev bc rsync kmod cpio libssl-dev git lsb vim libelf-dev
 # sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 100
