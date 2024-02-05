@@ -14,7 +14,7 @@ deb-src https://community-packages.deepin.com/beige/ beige main commercial commu
 EOL
 sudo apt update
 sudo apt install -y wget xz-utils make gcc-13 flex bison dpkg-dev bc rsync kmod cpio libssl-dev git lsb vim libelf-dev
-sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 100
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 100
 gcc -v
 sudo apt build-dep -y linux
 
