@@ -27,7 +27,7 @@ tar -xf linux-6.7.3-xanmod1.tar.gz
 cd linux-6.7.3-xanmod1|| exit
 
 # copy config file
-cp ../configf .config
+cp ../configfd .config
 
 # disable DEBUG_INFO to speedup build
 # scripts/config --set-str SYSTEM_TRUSTED_KEYS ""
