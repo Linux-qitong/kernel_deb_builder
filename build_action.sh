@@ -6,11 +6,6 @@ VERSION=$(grep 'Kernel Configuration' < config | awk '{print $3}')
 sed -i "/deb-src/s/# //g" /etc/apt/sources.list
 
 # install dep
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 425956BB3E31DF
-sudo sh -c "cat > /etc/apt/sources.list" << EOL
-deb https://community-packages.deepin.com/beige/ beige main commercial community
-deb-src https://community-packages.deepin.com/beige/ beige main commercial community
-EOL
 sudo apt update
 sudo apt install -y wget xz-utils make gcc-13 flex bison dpkg-dev bc rsync kmod cpio libssl-dev git lsb vim libelf-dev
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 100
