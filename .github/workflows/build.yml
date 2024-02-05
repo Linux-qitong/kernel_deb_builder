@@ -5,7 +5,7 @@ on:
 jobs:
   build:
     name: Build kernel
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
 
  # 由于默认的 Ubuntu 环境只有 17G 左右的剩余空间，所以我们需要先利用如下 action 对编译环境进行扩容
@@ -19,13 +19,13 @@ jobs:
           remove-android: 'true'
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Build
         run: bash build_action.sh
 
       - name: Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: artifact
           path: ${{ github.workspace }}/artifact/
