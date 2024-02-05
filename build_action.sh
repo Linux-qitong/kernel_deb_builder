@@ -13,9 +13,9 @@ deb-src https://community-packages.deepin.com/beige/ beige main commercial commu
 EOL
 sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 425956BB3E31DF
 sudo apt update
-sudo apt install -y wget xz-utils make gcc-12 flex bison dpkg-dev bc rsync kmod cpio libssl-dev git lsb vim libelf-dev
-# sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 100
- gcc -v
+sudo apt install -y wget xz-utils make gcc-13 flex bison dpkg-dev bc rsync kmod cpio libssl-dev git lsb vim libelf-dev
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 100
+gcc -v
 sudo apt build-dep -y linux
 
 # change dir to workplace
