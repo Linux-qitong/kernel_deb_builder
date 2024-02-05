@@ -20,16 +20,10 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: 1
-        run: 
-        sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 425956BB3E31DF
-        
-
+    
       - name: Build
         run: bash build_action.sh
-      
-
+    
       - name: Artifact
         uses: actions/upload-artifact@v3
         with:
