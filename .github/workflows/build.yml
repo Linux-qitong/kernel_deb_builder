@@ -21,8 +21,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       
-      - name: sudo
-        run: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 425956BB3E31DF
+      - name: s
+        run: |
+        sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 425956BB3E31DF
         
 
       - name: Build
