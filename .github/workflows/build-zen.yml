@@ -19,13 +19,13 @@ jobs:
           remove-android: 'true'
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Build
         run: bash build_action_zen.sh
 
       - name: Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: artifact
           path: ${{ github.workspace }}/artifact/
