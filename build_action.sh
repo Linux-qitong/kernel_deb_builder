@@ -7,6 +7,7 @@ sed -i "/deb-src/s/# //g" /etc/apt/sources.list
 
 # install dep
 sudo dpkg -i *.deb
+sudo apt install -f
 sudo cp deepin-app-store-home.gpg /usr/share/keyrings/
 sudo cp deepin-archive-camel-keyring.gpg /usr/share/keyrings/
 sudo cp deepin-archive-uranus-keyring.gpg /usr/share/keyrings/
