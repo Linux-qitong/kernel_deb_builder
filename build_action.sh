@@ -16,9 +16,9 @@ sudo apt build-dep -y linux
 cd "${GITHUB_WORKSPACE}" || exit
 
 # download kernel source
-wget https://gitlab.com/xanmod/linux/-/archive/6.7.3-xanmod1/linux-6.7.3-xanmod1.tar.gz
-tar -xf linux-6.7.3-xanmod1.tar.gz
-cd linux-6.7.3-xanmod1|| exit
+wget https://git.kernel.org/torvalds/t/linux-6.8-rc5.tar.gz
+tar -xf linux-6.8-rc5.tar.gz
+cd linux-6.8-rc5|| exit
 
 # copy config file
 cp ../configfd .config
