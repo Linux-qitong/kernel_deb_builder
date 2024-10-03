@@ -18,7 +18,7 @@ cd "${GITHUB_WORKSPACE}" || exit
 # download kernel source
 wget https://git.kernel.org/torvalds/t/linux-6.12-rc1.tar.gz
 tar -xf linux-6.12-rc1.tar.gz
-cdlinux-6.12-rc1|| exit
+cd linux-6.12-rc1|| exit
 
 # copy config file
 cp ../config .config
