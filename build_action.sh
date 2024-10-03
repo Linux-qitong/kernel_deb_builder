@@ -16,12 +16,12 @@ sudo apt build-dep -y linux
 cd "${GITHUB_WORKSPACE}" || exit
 
 # download kernel source
-wget https://git.kernel.org/torvalds/t/linux-6.8-rc5.tar.gz
-tar -xf linux-6.8-rc5.tar.gz
-cd linux-6.8-rc5|| exit
+wget https://git.kernel.org/torvalds/t/linux-6.12-rc1.tar.gz
+tar -xf linux-6.12-rc1.tar.gz
+cdlinux-6.12-rc1|| exit
 
 # copy config file
-cp ../configfd .config
+cp ../config .config
 
 # disable DEBUG_INFO to speedup build
 # scripts/config --set-str SYSTEM_TRUSTED_KEYS ""
