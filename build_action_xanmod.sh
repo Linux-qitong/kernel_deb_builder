@@ -16,12 +16,12 @@ sudo apt build-dep -y linux
 cd "${GITHUB_WORKSPACE}" || exit
 
 # download kernel source
-wget https://gitlab.com/xanmod/linux/-/archive/6.7.0-xanmod1/linux-6.7.0-xanmod1.tar.gz
-tar -xf linux-6.7.0-xanmod1.tar.gz
-cd linux-6.7.0-xanmod1|| exit
+wget https://gitlab.com/xanmod/linux/-/archive/6.6.53-xanmod1/linux-6.6.53-xanmod1.tar.gz
+tar -xf linux-6.6.53-xanmod1.tar.gz
+cd linux-6.6.53-xanmod1|| exit
 
 # copy config file
-cp ../configsi .config
+cp ../config1 .config
 
 # disable DEBUG_INFO to speedup build
 scripts/config --set-str SYSTEM_TRUSTED_KEYS ""
