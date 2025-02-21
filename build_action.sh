@@ -7,8 +7,8 @@ sed -i "/deb-src/s/# //g" /etc/apt/sources.list
 
 # install dep
 sudo apt update
-sudo apt install -y wget xz-utils make gcc-12 flex bison dpkg-dev bc rsync kmod cpio libssl-dev git lsb vim libelf-dev
-sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 100
+sudo apt install -y wget xz-utils make gcc-14 flex bison dpkg-dev bc rsync kmod cpio libssl-dev git lsb vim libelf-dev
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-14 100
 gcc -v
 sudo apt build-dep -y linux
 
@@ -16,9 +16,9 @@ sudo apt build-dep -y linux
 cd "${GITHUB_WORKSPACE}" || exit
 
 # download kernel source
-wget https://git.kernel.org/torvalds/t/linux-6.12-rc1.tar.gz
-tar -xf linux-6.12-rc1.tar.gz
-cd linux-6.12-rc1|| exit
+wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.3.tar.xz
+tar -xf linux-6.13.3.tar.xz
+cd linux-6.13.3|| exit
 
 # copy config file
 cp ../config .config
